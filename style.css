@@ -1,0 +1,46 @@
+#one, #two, #three, #four, #five{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(118, 148, 161);
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+#one{
+    position: absolute;
+    left: 10%;
+}
+
+#two{
+    position: absolute;
+    left: 20%
+}
+
+#three{
+    position: absolute;
+    top: 20%;
+    left: 10%
+
+}
+
+#four{
+    position: absolute;
+    top: 20%;
+    left: 20%
+
+}
+
+#five{
+    position: absolute;
+    top: 10%;
+    left: 15%
+}
+
+.effect{
+    z-index: 100;
+}
+
+.removeEffect{
+    z-index: 0
+}
