@@ -1,40 +1,46 @@
+.mainDiv{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 200px auto;
+}
 #one, #two, #three, #four, #five{
-    width: 120px;
-    height: 120px;
-    background-color: rgb(118, 148, 161);
+    width: 100px;
+    height: 60px;
+    background-color: #CFE2F3;
     border: 1px solid black;
     text-align: center;
+    font-size: large;
     cursor: pointer;
+    padding-top: 40px;
 }
 
 #one{
     position: absolute;
-    left: 10%;
+    left: 100px;
 }
 
 #two{
     position: absolute;
-    left: 20%
+    left: 230px;
 }
 
 #three{
     position: absolute;
-    top: 20%;
-    left: 10%
-
+    top: 105px;
+    left: 100px
 }
 
 #four{
     position: absolute;
-    top: 20%;
-    left: 20%
-
+    top: 105px;
+    left: 230px;
 }
 
 #five{
     position: absolute;
-    top: 10%;
-    left: 15%
+    top: 50px;
+    left: 165px;
 }
 
 .effect{

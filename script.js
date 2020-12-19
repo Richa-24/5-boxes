@@ -1,71 +1,38 @@
-window.onload = () => {
-    let one = document.getElementById('one')
-    let two = document.getElementById('two')
-    let three = document.getElementById('three')
-    let four = document.getElementById('four')
+let events = document.querySelector('#events');
+let status1, status2, status3, status4 = false
 
-    one.addEventListener("click", handleOne)
-    two.addEventListener("click", handleTwo)
-    three.addEventListener("click", handleThree)
-    four.addEventListener("click", handleFour)
-}
+events.addEventListener('click', (event) => {
+    let target = event.target.id;
 
-let status1 = false
-handleOne = () => {
+    switch (target) {
+        case 'one':
+            status1 = !status1
+            if (status1)
+                one.setAttribute("class", "effect");
+            else
+                one.setAttribute("class", "removeEffect");
+            break;
+        case 'two':
+            status2 = !status2
+            if (status2)
+                two.setAttribute("class", "effect");
+            else
+                two.setAttribute("class", "removeEffect");
 
-    status1 = !status1
-
-    if (status1) {
-        console.log("first")
-        one.setAttribute("class", "effect")
+            break;
+        case 'three':
+            status3 = !status3
+            if (status3)
+                three.setAttribute("class", "effect");
+            else
+                three.setAttribute("class", "removeEffect")
+            break;
+        case 'four':
+            status4 = !status4
+            if (status4)
+                four.setAttribute("class", "effect");
+            else
+                four.setAttribute("class", "removeEffect")
+            break;
     }
-    else {
-        console.log("second")
-        one.setAttribute("class", "removeEffect")
-    }
-}
-
-let status2 = false
-handleTwo = () => {
-    status2 = !status2
-
-    if (status2) {
-        console.log("first")
-        two.setAttribute("class", "effect")
-    }
-    else {
-        console.log("second")
-        two.setAttribute("class", "removeEffect")
-    }
-
-}
-
-let status3 = false
-handleThree = () => {
-    status3 = !status3
-
-    if (status3) {
-        console.log("first")
-        three.setAttribute("class", "effect")
-    }
-    else {
-        console.log("second")
-        three.setAttribute("class", "removeEffect")
-    }
-
-}
-
-let status4 = false
-handleFour = () => {
-    status4 = !status4
-
-    if (status4) {
-        console.log("first")
-        four.setAttribute("class", "effect")
-    }
-    else {
-        console.log("second")
-        four.setAttribute("class", "removeEffect")
-    }
-
-}
+});
